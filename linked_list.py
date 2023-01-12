@@ -61,6 +61,33 @@ class Linkedlist:
              
             current_node=current_node.next
 
+    def reverse_list(self):
+        current_node=self.head
+        prev=None
+        # 1->2->3->-4>null
+        # next=2->
+        # cur.next{->2}==None
+        # prev(none)=1->
+        # curr=2->
+        while current_node:
+            # saving temp as 2->
+            next=current_node.next
+            # 2-> set to null
+            current_node.next=prev
+            # prev=1->
+            prev=current_node 
+            # curr=2->
+            current_node=next
+            
+
+            
+            
+            
+            
+
+        return prev
+
+         
             
 
 # creating node
@@ -73,5 +100,13 @@ li.at_last('3')
 li.at_last('4')
 
 li.remove('2')
+print('after removing')
 li.print_data()
+print('after reverse')
+head=li.reverse_list()
+
+while head:
+    print(head.data)
+    head=head.next
+
  
