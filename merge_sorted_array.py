@@ -13,8 +13,8 @@ while i<len(list1) and j<len(list2):
     else:
         sorted_list.append(list2[j])
         j+=1
-sorted_list.extend(list1[i:])
-sorted_list.extend(list2[j:])
+sorted_list+=list1[i:]
+sorted_list+=list2[j:]
 
 print(sorted_list)
 
