@@ -26,7 +26,7 @@ def merge(left,right):
     return result
 
 print(merge_sort([13,2,1,4]))
-
+ 
 # def merge_sort(arr):
 #     # 1
 #     print(arr)
