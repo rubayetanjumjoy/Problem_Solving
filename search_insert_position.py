@@ -20,3 +20,4 @@ def searchInsert(nums, target):
         print(first)
         return first
 searchInsert([1,3,5,6],2)
+

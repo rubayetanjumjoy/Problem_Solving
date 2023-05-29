@@ -17,4 +17,4 @@ def isSubsequence( s, t):
             
         
         return sub == s
-print(isSubsequence('acv','aaaaav'))
+print(isSubsequence('av','aaaaav'))

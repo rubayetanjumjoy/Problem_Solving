@@ -24,6 +24,17 @@ class Linkedlist:
                 current_node=current_node.next
                  
             current_node.next=newnode
+
+    def find_middle(self):
+        fast=self.head
+        slow=self.head
+        while fast and fast.next:
+            
+            fast=fast.next.next
+            slow=slow.next
+
+        return slow
+    
     def remove(self,data):
         current_node=self.head
          
@@ -78,6 +89,7 @@ class Linkedlist:
             prev=current_node 
             # curr=2->
             current_node=next
+            # 2->1->null
             
 
             
@@ -99,14 +111,15 @@ li.at_last('2')
 li.at_last('3')
 li.at_last('4')
 
-li.remove('2')
-print('after removing')
-li.print_data()
-print('after reverse')
-head=li.reverse_list()
+# li.remove('2')
+# print('after removing')
+# li.print_data()
+# print('after reverse')
+# head=li.reverse_list()
 
-while head:
-    print(head.data)
-    head=head.next
-
+# while head:
+#     print(head.data)
+#     head=head.next
+x=li.find_middle()
+print(x.data,'a')
  
