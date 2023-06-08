@@ -16,7 +16,7 @@ def binarySearch(find,List):
             l=mid
             print('last',mid)
         if List[mid]<find:
-            f=mid
+            f=mid-1
             print('first',mid)
         
 print(binarySearch(5,[1,2,3,4,5,6,7,8]))

@@ -21,4 +21,4 @@ class Solution(object):
         
         return buildString(s) == buildString(t)
     
-print(Solution().backspaceCompare('aa#a','aa#b'))
+print(Solution().backspaceCompare('ab#b','aa#b'))
